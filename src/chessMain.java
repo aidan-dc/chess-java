@@ -7,9 +7,9 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.File;
 import java.util.ArrayList;
-// import javafx.scene.media.Media;
-// import javafx.scene.media.MediaPlayer;
-// import javafx.embed.swing.JFXPanel;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import javafx.embed.swing.JFXPanel;
 
 
 public class chessMain extends Canvas implements MouseListener{
@@ -51,7 +51,7 @@ public class chessMain extends Canvas implements MouseListener{
 	public static int blackMaterialCount, whiteMaterialCount;
 	
 	public chessMain() throws Exception{
-		// final JFXPanel fxPanel = new JFXPanel();
+		final JFXPanel fxPanel = new JFXPanel();
 		addMouseListener(this);
 		enableEvents(java.awt.AWTEvent.KEY_EVENT_MASK);
 
@@ -1668,10 +1668,10 @@ public class chessMain extends Canvas implements MouseListener{
 	}
 	
 	private void playSound() {
-		// String capture = "capture.mp3";
-		// Media hit = new Media(new File(capture).toURI().toString());
-		// MediaPlayer mediaPlayer = new MediaPlayer(hit);
-		// mediaPlayer.play();
+		String capture = "resources/capture.mp3";
+		Media hit = new Media(new File(capture).toURI().toString());
+		MediaPlayer mediaPlayer = new MediaPlayer(hit);
+		mediaPlayer.play();
 	}
 
 }
