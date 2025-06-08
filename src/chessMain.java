@@ -55,19 +55,19 @@ public class chessMain extends Canvas implements MouseListener{
 		addMouseListener(this);
 		enableEvents(java.awt.AWTEvent.KEY_EVENT_MASK);
 
-		whitePawn = ImageIO.read(new File("whitePawn.png"));
-		whiteRook = ImageIO.read(new File("whiteRook.png"));
-		whiteKnight = ImageIO.read(new File("whiteKnight.png"));
-		whiteBishop = ImageIO.read(new File("whiteBishop.png"));
-		whiteKing = ImageIO.read(new File("whiteKing.png"));
-		whiteQueen = ImageIO.read(new File("whiteQueen.png"));
+		whitePawn = ImageIO.read(new File("resources/whitePawn.png"));
+		whiteRook = ImageIO.read(new File("resources/whiteRook.png"));
+		whiteKnight = ImageIO.read(new File("resources/whiteKnight.png"));
+		whiteBishop = ImageIO.read(new File("resources/whiteBishop.png"));
+		whiteKing = ImageIO.read(new File("resources/whiteKing.png"));
+		whiteQueen = ImageIO.read(new File("resources/whiteQueen.png"));
 		
-		blackPawn = ImageIO.read(new File("blackPawn.png"));
-		blackRook = ImageIO.read(new File("blackRook.png"));
-		blackKnight = ImageIO.read(new File("blackKnight.png"));
-		blackBishop = ImageIO.read(new File("blackBishop.png"));
-		blackKing = ImageIO.read(new File("blackKing.png"));
-		blackQueen = ImageIO.read(new File("blackQueen.png"));
+		blackPawn = ImageIO.read(new File("resources/blackPawn.png"));
+		blackRook = ImageIO.read(new File("resources/blackRook.png"));
+		blackKnight = ImageIO.read(new File("resources/blackKnight.png"));
+		blackBishop = ImageIO.read(new File("resources/blackBishop.png"));
+		blackKing = ImageIO.read(new File("resources/blackKing.png"));
+		blackQueen = ImageIO.read(new File("resources/blackQueen.png"));
 		
 		board = new piece[8][8];
 		
